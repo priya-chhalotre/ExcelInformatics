@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   ngOnInit(){
-    window.scroll(0, 20)
+    window.scroll(0,0)
   }
 }

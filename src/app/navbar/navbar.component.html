@@ -4,10 +4,13 @@
       Excel Informatics
       <!-- <img src="../../assets/eipl-logo.jpg" alt="img"/> -->
     </a>
-    <button class="navbar-toggler" type="button">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      (click)="toggleCollapsed()">
+      <i class="text-white bi bi-list"></i>
     </button>
-    <div class="collapse navbar-collapse justify-content-end">
+    <div class="collapse navbar-collapse justify-content-end"
+      [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" routerLink="home">Home</a>
@@ -31,22 +34,16 @@
     </div>
   </div>
 </nav>
-<div class="section bg-home home-half">
+<section class="section bg-home home-half">
   <div class="bg-overlay"></div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 offset-lg-2 position-absolute text-white text-center">
+      <div class="col-lg-6 offset-lg-2 position-absolute text-white text-center">
         <h1>Welcome to Excel Informatics Pvt. Ltd.</h1>
         <p class="mt-4 home-desc">Professional managed with wide operations for the last 10 years. One of the
           system integrator (SI),
           Multi-Vendor Sales, Services and third party maintenance (TPM).</p>
-          <div class="text-center subscribe-form margin-t-30">
-             <form>
-              <input type="text" placeholder="Email"/>
-              <button class="btn btn-custom" type="submit">Subscribe</button>
-             </form>
-          </div>
       </div>
     </div>
   </div>
-</div>
+</section>

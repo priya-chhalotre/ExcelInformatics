@@ -6,12 +6,12 @@
 }
 
 .bg-home {
-    background: url('../../assets/homebg.jpg');
+    background: url('../../assets/headerbg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: auto;
-    min-height: 550px;
+    height: 100%;
+    min-height: 550px;  
     object-fit: cover;
     width: 100%;
 }
@@ -20,11 +20,8 @@
     background: linear-gradient(to right, #512DA8, #711e72);
     opacity: 0.9;
     position: absolute;
-    height: auto;
     min-height: 550px;
     width: 100%;
-    right: 0;
-    bottom: 0;
     left: 0;
     top: 0;
 }
@@ -81,7 +78,6 @@
     background-color: #fb3e3e;
     color: white;
 }
-
 .sticky {
     padding: 10px;
     background-color: rgb(39, 42, 51) !important;
@@ -99,28 +95,64 @@
 
 /* Responsive css */
 
-@media only screen and (min-width:320px) and (max-width:767px) {
-    .bg-home {
-        min-height: 352px;
-    }
-
-    .bg-overlay {
-        min-height: 356px;
-    }
-
-    .offset-lg-2 {
-        margin: 0;
-    }
-}
-
-@media (max-width: 1024px) {
-    .home-half {
-        padding-bottom: 100px;
-        padding-top: 120px;
-    }
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .container {
         width: 80%;
         margin: 0;
     }
-}
+    .navbar{
+        margin-top: 0px;
+        padding: 10px 0px !important;
+        background-color: #272a33 !important;
+        box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
+    }
+    .navbar button.navbar-toggler {
+        position: absolute;
+        right: 13px;
+        top: 14px;
+        font-size: 15px;
+        background: transparent;
+        border: none;
+    }
+  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .navbar button.navbar-toggler {
+        display: none;
+    }
+  } 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .home-half {
+        padding-bottom: 100px;
+        padding-top: 120px;
+    }
+   
+  } 
+
+/* @media (max-width: 1024px) {
+    .home-half {
+        padding-bottom: 100px;
+        padding-top: 120px;
+    }
+    .container {
+        width: 80%;
+        margin: 0;
+    }
+    .navbar{
+        margin-top: 0px;
+        padding: 10px 0px !important;
+        background-color: #272a33 !important;
+        box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
+    }
+    .navbar button.navbar-toggler {
+        position: absolute;
+        right: 13px;
+        top: 14px;
+        font-size: 15px;
+        background: transparent;
+        border: none;
+    }
+} */
