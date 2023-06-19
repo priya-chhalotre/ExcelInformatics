@@ -1,0 +1,55 @@
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.contact-title{
+    animation: 1s ease-out 0s 1 slideFromRight;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+.contact-form{
+    animation: 2s ease-out 0s 1 slideFromLeft;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+.section-title-border{
+    width: 50px;
+    height: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fb3e3e;
+}
+.text-muted {
+    color: #a8aeb4 !important;
+}
+.form-control {
+    margin-bottom: 20px;
+    box-shadow: none !important;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+.btn-custom {
+    border: 1px solid;
+    color: #fff;
+    transition: all 0.3s;
+    font-size: 14px;
+    background-color: #fb3e3e;
+    padding: 10px 22px
+}
+@keyframes slideFromRight {
+    0% {
+        transform: translate(100%);
+    }
+}
+@keyframes slideFromLeft{
+    0% {
+        transform: translate(-100%);
+    }
+}

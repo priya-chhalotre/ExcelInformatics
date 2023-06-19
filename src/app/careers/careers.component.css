@@ -1,0 +1,28 @@
+.bg-light {
+    background-color: #fafbfe !important;
+}
+.bg-light h3{
+    animation: 1s ease-out 0s 1 slideFromRight;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+.text-muted{
+    color: #98a0aa;
+    padding-top: 8px;
+    display: inline-block;
+    font-size: 14px;
+    animation: 1s ease-out 0s 1 slideFromBottom;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+@keyframes slideFromRight {
+    0% {
+        transform: translate(100%) scale(.1);
+    }
+}
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%) scale(.1);
+    }
+   
+}
