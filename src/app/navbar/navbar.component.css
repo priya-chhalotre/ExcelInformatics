@@ -11,7 +11,7 @@
     background-size: cover;
     background-position: center;
     height: 100%;
-    min-height: 550px;  
+    min-height: 550px;
     object-fit: cover;
     width: 100%;
 }
@@ -27,10 +27,27 @@
 }
 
 .home-half {
-    padding-bottom: 150px;
-    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-top: 240px;
 }
-
+.home-half h1 {
+    font-size: 46px;
+    line-height: 64px;
+}
+.home-half p.mt-4.home-desc {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.navbar a.navbar-brand {
+    text-transform: uppercase;
+    color: #fff !important;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+}
 .navbar {
     position: fixed;
     top: 0;
@@ -46,37 +63,11 @@
     max-width: 600px;
     margin: 0 auto;
 }
-
-.subscribe-form form {
-    position: relative;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.subscribe-form input {
-    padding: 15px 20px;
-    width: 100%;
-    font-size: 17px;
-    color: #4c5667 !important;
-    border: none;
-    outline: none !important;
-    padding-right: 180px;
-    padding-left: 30px;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 30px;
-}
-
-.subscribe-form button {
-    position: absolute;
-    text-transform: uppercase;
-    top: 6px;
-    right: 8px;
-    outline: none !important;
-    border-radius: 30px;
-    font-size: 16px;
-    padding: 9px 30px;
-    background-color: #fb3e3e;
+.header-content {
     color: white;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
 }
 .sticky {
     padding: 10px;
@@ -96,17 +87,33 @@
 /* Responsive css */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 80%;
-        margin: 0;
-    }
-    .navbar{
+@media only screen and (max-width: 992px){
+    .navbar-custom {
+        width: 100%;
         margin-top: 0px;
         padding: 10px 0px !important;
         background-color: #272a33 !important;
         box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
     }
+    .navbar button.navbar-toggler {
+        position: absolute;
+        right: 9px;
+        top: 13px;
+        font-size: 21px;
+        background: transparent;
+        border: none;
+    }
+    .home-half h1 {
+        font-size: 28px;
+        line-height: 40px
+    }
+    .home-half p.mt-4.home-desc {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and(max-width: 1024px){
     .navbar button.navbar-toggler {
         position: absolute;
         right: 13px;
@@ -115,44 +122,6 @@
         background: transparent;
         border: none;
     }
-  }
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .navbar button.navbar-toggler {
-        display: none;
-    }
-  } 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .home-half {
-        padding-bottom: 100px;
-        padding-top: 120px;
-    }
-   
-  } 
-
-/* @media (max-width: 1024px) {
-    .home-half {
-        padding-bottom: 100px;
-        padding-top: 120px;
-    }
-    .container {
-        width: 80%;
-        margin: 0;
-    }
-    .navbar{
-        margin-top: 0px;
-        padding: 10px 0px !important;
-        background-color: #272a33 !important;
-        box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
-    }
-    .navbar button.navbar-toggler {
-        position: absolute;
-        right: 13px;
-        top: 14px;
-        font-size: 15px;
-        background: transparent;
-        border: none;
-    }
-} */
+ 
+}

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" [ngClass]="{'bg-primary-scroll' : true, 'sticky' : isSticky}">
+<nav class="navbar navbar-expand-lg navbar-custom" [ngClass]="{'bg-primary-scroll' : true, 'sticky' : isSticky}">
   <div class="container">
     <a class="navbar-brand" routerLink="/">
       Excel Informatics
@@ -12,23 +12,23 @@
     <div class="collapse navbar-collapse justify-content-end"
       [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item" >
           <a class="nav-link" routerLink="home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="company">Company</a>
+          <a class="nav-link" routerLink="company" (click)="toggleCollapsed()">Company</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="services">Services</a>
+          <a class="nav-link" routerLink="services" (click)="toggleCollapsed()">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="customers">Customers</a>
+          <a class="nav-link" routerLink="customers" (click)="toggleCollapsed()">Customers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="careers">Careers</a>
+          <a class="nav-link" routerLink="careers"  (click)="toggleCollapsed()">Careers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="contactus">Contact Us</a>
+          <a class="nav-link" routerLink="contactus"  (click)="toggleCollapsed()">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -38,7 +38,7 @@
   <div class="bg-overlay"></div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 offset-lg-2 position-absolute text-white text-center">
+      <div class="col-lg-8 header-content">
         <h1>Welcome to Excel Informatics Pvt. Ltd.</h1>
         <p class="mt-4 home-desc">Professional managed with wide operations for the last 10 years. One of the
           system integrator (SI),

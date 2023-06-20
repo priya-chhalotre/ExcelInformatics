@@ -14,7 +14,7 @@ checkScroll() {
   this.isSticky = window.pageYOffset >= 250;
 }
 toggleCollapsed(): void {
-  this.collapsed = !this.collapsed;
+  this.collapsed = !this.collapsed; 
 }
 
 }

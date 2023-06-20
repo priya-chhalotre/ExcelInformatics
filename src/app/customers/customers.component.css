@@ -30,7 +30,7 @@
     animation-delay: 1s;
   }
 
-  @keyframes slideFromLeft{
+  /* @keyframes slideFromLeft{
     0% {
         transform: translate(-100%) scale(.1);
     }
@@ -39,7 +39,7 @@
     0% {
         transform: translate(100%);
     }
-}
+} */
 
 /* Responsive */
 @media (max-width: 1024px){

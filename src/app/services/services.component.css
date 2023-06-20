@@ -45,12 +45,12 @@
     animation-name: bounce-3;
     animation-timing-function: 1s ease-in-out;
 }
-@keyframes bounce-3 {
+/* @keyframes bounce-3 {
     0%   { transform: translateY(0); }
     30%  { transform: translateY(-30px); }
     50%  { transform: translateY(0); }
     100% { transform: translateY(0); }
-}
+} */
 .bg-light {
     background-color: #fafbfe!important;
 }
@@ -74,7 +74,7 @@
     animation-fill-mode: both;
     animation-delay: 1s;
 }
-@keyframes slideFromLeft {
+/* @keyframes slideFromLeft {
     0% {
         transform: translateX(-100%);
     }
@@ -86,7 +86,7 @@
     0% {
         transform: translate(100%) scale(.1);
     }
-}
+} */
 
 /* Responsive  */
 @media (max-width: 1024px){

@@ -15,7 +15,7 @@
     animation-fill-mode: both;
     animation-delay: 1s;
 }
-@keyframes slideFromRight {
+/* @keyframes slideFromRight {
     0% {
         transform: translate(100%) scale(.1);
     }
@@ -25,4 +25,4 @@
         transform: translateY(100%) scale(.1);
     }
    
-}
+} */

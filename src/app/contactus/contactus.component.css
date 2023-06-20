@@ -43,7 +43,7 @@
     background-color: #fb3e3e;
     padding: 10px 22px
 }
-@keyframes slideFromRight {
+/* @keyframes slideFromRight {
     0% {
         transform: translate(100%);
     }
@@ -52,4 +52,4 @@
     0% {
         transform: translate(-100%);
     }
-}
+} */
