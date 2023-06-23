@@ -18,7 +18,7 @@
 
 .bg-overlay {
     background: linear-gradient(to right, #512DA8, #711e72);
-    opacity: 0.9;
+    opacity: 0.8;
     position: absolute;
     min-height: 550px;
     width: 100%;
@@ -76,7 +76,7 @@
 
 .sticky li.nav-item a,
 .navbar li.nav-item a {
-    color: #c9b0b0;
+    color:white;
 }
 
 .sticky li.nav-item a:hover,

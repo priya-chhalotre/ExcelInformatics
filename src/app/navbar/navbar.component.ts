@@ -16,5 +16,8 @@ checkScroll() {
 toggleCollapsed(): void {
   this.collapsed = !this.collapsed; 
 }
+ngOnInit(){
+  window.scroll(0,50)
+}
 
 }

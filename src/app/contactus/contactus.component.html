@@ -31,52 +31,59 @@
                     </p>
                 </div>
             </div>
+            <!-- <form ngNoForm  action="https://docs.google.com/forms/d/e/1FAIpQLSezN781P84j52jUFqRmlDsDnBmsvi6f5VbeXANqVhbrSmxhAA/viewform" method="post">
+                <label for="entry.1600872705">First name:</label><br>   
+                <input type="text" name="entry.1600872705" placeholder="fisrtname"><br>
+                <label for="entry.355269890">Last name:</label><br>
+                <input type="text" name="entry.355269890" placeholder="lastname"><br><br>
+                <input type="submit" value="Submit">
+              </form>  -->
             <div class="col-lg-8">
                 <div class="custom-form mt-4 pt-4">
-                    <form #contactsForm="ngForm">
+                    <form [formGroup]="formData">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group mt-2">
-                                    <input placeholder="Your name*" class="form-control" name="name" ngModel/>
+                                    <input formControlName="name" placeholder="Your name*" type="text" class="form-control" name="name" required/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group mt-2">
-                                    <input placeholder="Email*" class="form-control" name="email" ngModel/>
+                                    <input placeholder="Email*" formControlName="email" class="form-control" type="email" name="email"  required/>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group mt-2">
-                                    <input placeholder="Subject*" class="form-control" name="subject" ngModel/>
+                                    <input placeholder="Subject*" class="form-control" type="text" name="subject" required/>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group mt-2">
-                                    <input placeholder="Address*" class="form-control" name="address" ngModel/>
+                                    <input placeholder="Address*" class="form-control" type="text" name="address" required/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group mt-2">
-                                    <input placeholder="Phone number*" class="form-control" name="phonenumber" ngModel/>
+                                    <input placeholder="Phone number*" class="form-control" type="number" name="phonenumber" required/>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group mt-2">
-                                    <input placeholder="Your Message..*" class="form-control" name="message" ngModel/>
+                                    <input formControlName="message" placeholder="Your Message..*" type="text" class="form-control" name="message" required/>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 text-end">
                                 <div class="form-group mt-2">
-                                    <button type="button" value="Send Message"
-                                        class="submitBnt btn btn-custom" (click)="onSubmit(contactsForm)">
+                                    <button type="submit" value="Send Message"
+                                        class="submitBnt btn btn-custom" (click)="onSubmit()">
                                         Submit
                                     </button>
                                 </div>

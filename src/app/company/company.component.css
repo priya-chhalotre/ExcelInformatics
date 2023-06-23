@@ -13,45 +13,18 @@
     max-width: 500px;
     margin: 0 0 0 auto;
 }
-.content-box{
-    animation: 1s ease-out 0s 1 slideFromLeft;
-}
 .img-company{
     height: auto;
     width: 100%;
     max-width: 366px;
     float: right;
-    animation: 1s ease-out 0s 1 slideFromRight;
-    animation-fill-mode: both;
-    animation-delay: 1s;
+    animation: fadeIn 6s;
 }
-.aim-hover{
-    animation: 1s ease-out 0s 1 slideFromBottom; 
-    animation-fill-mode: both;
-    animation-delay: 1.5s;
-}
-/* @keyframes slideFromBottom {
-    0% {
-        transform: translateY(100%) scale(.1);
-    }
-} */
-
-/* @keyframes slideFromLeft {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(10);
-    }
-}
-@keyframes slideFromRight {
-    0% {
-        transform: translate(100%) scale(.1);
-    }
-} */
-
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 /* Responsive css */
-
 @media only screen and (max-width: 767px) and (min-width: 550px)  {
     .bg-light{
         max-width:none;

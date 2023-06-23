@@ -1,28 +1,26 @@
 .bg-light {
     background-color: #fafbfe !important;
 }
-.bg-light h3{
-    animation: 1s ease-out 0s 1 slideFromRight;
-    animation-fill-mode: both;
-    animation-delay: 1s;
-}
 .text-muted{
     color: #98a0aa;
     padding-top: 8px;
     display: inline-block;
     font-size: 14px;
-    animation: 1s ease-out 0s 1 slideFromBottom;
-    animation-fill-mode: both;
-    animation-delay: 1s;
 }
-/* @keyframes slideFromRight {
-    0% {
-        transform: translate(100%) scale(.1);
-    }
+.features-img img.img-company {
+    width: 100%;
+    max-width: 385px;
+    height: auto;
+    float: right;
 }
-@keyframes slideFromBottom {
-    0% {
-        transform: translateY(100%) scale(.1);
-    }
-   
-} */
+.fade-in-image{
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

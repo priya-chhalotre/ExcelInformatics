@@ -15,32 +15,15 @@
 .img-fluid {
     max-width: 100%;
     height: auto;
+    animation: fadeIn 5s;
 }
 .clients-logo img.img-fluid:nth-child(2){
     background: red;
   }
-  .text-effect{
-    animation: 1s ease-out 0s 1 slideFromLeft;
-    animation-fill-mode: both;
-    animation-delay: 1s;
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
-  .all-clients{
-    animation: 1s ease-out 0s 1 slideFromRight;
-    animation-fill-mode: both;
-    animation-delay: 1s;
-  }
-
-  /* @keyframes slideFromLeft{
-    0% {
-        transform: translate(-100%) scale(.1);
-    }
-}
-@keyframes slideFromRight {
-    0% {
-        transform: translate(100%);
-    }
-} */
-
 /* Responsive */
 @media (max-width: 1024px){
     .text-effect {
